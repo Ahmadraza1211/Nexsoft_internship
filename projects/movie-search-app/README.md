@@ -22,33 +22,7 @@ A full-stack movie search app with caching, favorites, and dark UI. Powered by t
 | Database | SQLite (better-sqlite3) |
 | API | OMDB API (free tier) |
 
-## 📁 Project Structure
 
-```
-movie-search-app/
-├── backend/
-│   ├── package.json
-│   ├── server.js          # Express server
-│   ├── database.js         # SQLite setup & schema
-│   └── routes/
-│       └── movies.js       # API routes
-├── frontend/
-│   ├── package.json
-│   ├── vite.config.js
-│   ├── index.html
-│   └── src/
-│       ├── main.jsx
-│       ├── App.jsx
-│       ├── App.css
-│       └── components/
-│           ├── Navbar.jsx / .css
-│           ├── SearchBar.jsx / .css
-│           ├── MovieCard.jsx / .css
-│           ├── MovieDetail.jsx / .css
-│           ├── Favorites.jsx / .css
-├── README.md
-└── .gitignore
-```
 
 ## 🚀 Getting Started
 
@@ -125,22 +99,6 @@ curl -X POST http://localhost:3003/api/favorites \
 curl http://localhost:3003/api/favorites
 ```
 
-## 💾 Database
-
-SQLite database is stored at `backend/data/movies.db`. Tables:
-
-- **cached_movies** — Cached OMDB results (24-hour TTL)
-- **favorites** — User's saved movies
-- **search_history** — Recent search queries
-
-To reset the database, simply delete the `backend/data/` folder and restart the server.
-
-## 🎨 Design
-
-- **Dark theme** inspired by IMDB
-- **Color scheme**: `#0f0f1a` (bg), `#16213e` (cards), `#f5c518` (accent)
-- **Font**: Inter (Google Fonts)
-- **Responsive grid**: 2 → 3 → 4 columns
 
 ## 📝 Notes
 
