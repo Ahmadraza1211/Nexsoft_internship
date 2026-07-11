@@ -1,0 +1,167 @@
+.task-item {
+    background: #f8f9fa;
+    border-left: 5px solid #667eea;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.task-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.task-item.completed {
+    opacity: 0.7;
+    border-left-color: #51cf66;
+}
+
+.task-item.in-progress {
+    border-left-color: #4dabf7;
+}
+
+.task-item.pending {
+    border-left-color: #868e96;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 12px;
+    gap: 15px;
+}
+
+.task-title-section {
+    flex: 1;
+}
+
+.task-title {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.edit-input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #667eea;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.task-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.priority-badge,
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.task-description {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.task-meta {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #999;
+}
+
+.category,
+.due-date,
+.created-date {
+    padding: 4px 8px;
+    background: white;
+    border-radius: 4px;
+}
+
+.task-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.status-select,
+.btn-edit,
+.btn-save,
+.btn-cancel,
+.btn-delete {
+    padding: 8px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.status-select {
+    background: white;
+    color: #333;
+    flex: 1;
+    min-width: 130px;
+}
+
+.status-select:hover,
+.status-select:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+.btn-edit {
+    background: #4dabf7;
+    color: white;
+    border: none;
+}
+
+.btn-edit:hover {
+    background: #3fa9f7;
+}
+
+.btn-save {
+    background: #51cf66;
+    color: white;
+    border: none;
+}
+
+.btn-save:hover {
+    background: #40c057;
+}
+
+.btn-cancel {
+    background: #868e96;
+    color: white;
+    border: none;
+}
+
+.btn-cancel:hover {
+    background: #748085;
+}
+
+.btn-delete {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+}
+
+.btn-delete:hover {
+    background: #fa5252;
+}
