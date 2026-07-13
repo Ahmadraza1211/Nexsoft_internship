@@ -1,0 +1,93 @@
+.message-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background: #e5ddd5;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.message-list-empty {
+  text-align: center;
+  color: #888;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+/* System messages */
+.message-system {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  font-style: italic;
+  background: #e2e2e2;
+  padding: 6px 16px;
+  border-radius: 8px;
+  align-self: center;
+  margin: 8px 0;
+}
+
+.message-system span {
+  font-weight: 600;
+}
+
+/* Message rows */
+.message-row {
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.message-row.message-own {
+  justify-content: flex-end;
+}
+
+/* Message bubbles */
+.message-bubble {
+  max-width: 65%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.bubble-other {
+  background: white;
+  border-top-left-radius: 2px;
+}
+
+.bubble-own {
+  background: #dcf8c6;
+  border-top-right-radius: 2px;
+}
+
+.message-author {
+  font-size: 12px;
+  font-weight: 700;
+  color: #25d366;
+  margin-bottom: 2px;
+}
+
+.bubble-own .message-author {
+  color: #0b8a3e;
+}
+
+.message-text {
+  font-size: 14px;
+  color: #303030;
+  word-wrap: break-word;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.message-time {
+  font-size: 11px;
+  color: #999;
+  text-align: right;
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .message-bubble {
+    max-width: 85%;
+  }
+}
